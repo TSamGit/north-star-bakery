@@ -1,0 +1,49 @@
+/* Touchstone 3: North Star Bakery | Mobile-first external stylesheet */
+:root { --cream:#fff8ec; --brown:#38251d; --caramel:#a75b24; --white:#ffffff; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--cream); color:var(--brown); font-family:Arial,Helvetica,sans-serif; font-size:1rem; line-height:1.65; }
+a { color:var(--caramel); }
+a:hover, a:focus-visible { text-decoration-thickness:3px; }
+.site-header { background:var(--brown); color:var(--white); padding:1rem max(1rem, calc((100% - 1100px)/2)); display:flex; flex-direction:column; align-items:center; gap:.75rem; }
+.site-header img { display:block; max-width:160px; height:auto; }
+.site-header nav ul { display:flex; flex-wrap:wrap; justify-content:center; gap:.35rem .65rem; list-style:none; padding:0; margin:0; }
+.site-header nav a { display:block; color:var(--white); padding:.45rem .7rem; text-decoration:none; border-radius:.4rem; font-weight:700; }
+.site-header nav a:hover,.site-header nav a:focus-visible { background:var(--caramel); color:var(--white); }
+.container { max-width:1100px; margin:auto; padding:1.5rem 1rem 3rem; }
+h1,h2,h3 { font-family:Georgia,'Times New Roman',serif; line-height:1.2; }
+h1 { font-size:clamp(2rem,5vw,3.2rem); margin:.3rem 0 1rem; }
+h2 { font-size:clamp(1.35rem,3vw,1.8rem); margin:0 0 .75rem; }
+h3 { font-size:1.2rem; margin:.6rem 0; }
+p { margin:.5rem 0 1rem; }
+.intro { max-width:72ch; font-size:1.12rem; }
+.content-card { background:var(--white); border-left:5px solid var(--caramel); border-radius:.6rem; padding:1.25rem; margin:1.25rem 0; box-shadow:0 4px 16px rgba(56,37,29,.08); }
+img,picture,video,audio { max-width:100%; }
+img { height:auto; border-radius:.5rem; }
+picture { display:block; }
+picture img { display:block; width:100%; max-width:650px; }
+.feature-figure { margin:1rem 0; }
+.feature-figure img { display:block; }
+figcaption { font-size:.95rem; font-style:italic; margin-top:.5rem; }
+audio { width:100%; max-width:520px; }
+video { width:100%; height:auto; }
+fieldset { border:1px solid var(--caramel); border-radius:.5rem; margin:1rem 0; padding:1rem; }
+legend { font-family:Georgia,'Times New Roman',serif; font-size:1.2rem; font-weight:bold; padding:0 .35rem; }
+label { display:inline-block; font-weight:bold; margin-bottom:.25rem; }
+input,select,textarea { width:100%; max-width:620px; border:1px solid var(--brown); border-radius:.35rem; padding:.65rem; font:inherit; background:var(--white); color:var(--brown); }
+textarea { resize:vertical; }
+input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible { outline:3px solid var(--caramel); outline-offset:2px; }
+button { border:0; border-radius:.4rem; padding:.85rem 1.4rem; background:var(--caramel); color:var(--white); font:inherit; font-weight:bold; cursor:pointer; }
+button:hover { background:var(--brown); }
+.site-footer { background:var(--brown); color:var(--white); text-align:center; padding:1.4rem 1rem; }
+.site-footer a { color:var(--white); }
+@media (min-width:760px) {
+ .site-header { flex-direction:row; justify-content:space-between; gap:2rem; }
+ .site-header nav ul { justify-content:flex-end; gap:1rem; }
+ .container { padding:2.5rem 2rem 4rem; }
+ .content-card { padding:1.8rem 2rem; }
+ fieldset { display:flex; flex-wrap:wrap; gap:0 1.5rem; align-items:start; }
+ fieldset legend { width:auto; }
+ fieldset > p { flex:1 1 280px; }
+}
+@media (min-width:1050px) { .container { padding-left:3rem; padding-right:3rem; } }
