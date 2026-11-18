@@ -47,3 +47,14 @@ button:hover { background:var(--brown); }
  fieldset > p { flex:1 1 280px; }
 }
 @media (min-width:1050px) { .container { padding-left:3rem; padding-right:3rem; } }
+
+/* Touchstone 4: accessible favorites and validation */
+.favorite-grid { display:flex; flex-wrap:wrap; gap:1rem; margin:1rem 0; }
+.favorite-option { flex:1 1 190px; border:1px solid #d4b49d; border-radius:10px; padding:1rem; background:#fff8f0; }
+.favorite-option h3 { margin-top:0; }
+.favorite-option button, .secondary-button { cursor:pointer; border:2px solid #6b3e26; border-radius:6px; padding:.6rem .9rem; background:#6b3e26; color:#fff; font:inherit; }
+.favorite-option button[aria-pressed="true"] { background:#fff8f0; color:#6b3e26; }
+.favorite-option button:focus-visible, .secondary-button:focus-visible { outline:3px solid #d88c5a; outline-offset:3px; }
+.field-error { display:block; min-height:1.25em; color:#9a2525; font-weight:bold; margin-top:.25rem; }
+[aria-invalid="true"] { border:2px solid #9a2525 !important; }
+#form-status, #favorites-status { font-weight:bold; }

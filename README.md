@@ -1,9 +1,7 @@
-North Star Bakery — Touchstone 3
+North Star Bakery — Touchstone 4
 
-Four HTML pages and one external mobile-first CSS file.
+Four pages continue from Touchstone 3. New features: favorites tracker on products.html, JavaScript validation on contact.html, localStorage persistence.
 
-IMPORTANT: Add the original Sophia Bakery media files to a folder named media/ using the exact filenames referenced in the HTML (e.g., bakery-logo_c.png). The provided media files are not included in this ZIP.
+Keep your existing media/ folder in Codespaces. Replace the four HTML files and styles.css, and add script.js.
 
-Open index.html or use a local web server. Verify navigation, images, media playback, and contact form validation.
-
-After uploading to GitHub, copy the repository URL into the Word document before submitting.
+Preview: python3 -m http.server 8000 (Codespaces Ports tab). The demo form does not send data.
